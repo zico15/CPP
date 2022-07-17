@@ -1,8 +1,10 @@
 SRCS =  main.cpp \
- 		Fixed.cpp
+ 		Fixed.cpp \
+		Point.cpp \
+		bsp.cpp
 
 CC = clang++
-NAME = ex00
+NAME = ex03
 
 CFLANG = -Wall -Wextra -Werror -std=c++98
 OBJS = $(SRCS:.cpp=.o)
