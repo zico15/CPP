@@ -57,10 +57,11 @@ void Fixed::setRawBits(int const raw)
 
 float Fixed::toFloat(void) const
 {
-	return ((float) this->getRawBits() / (float)(1 << Fixed::bits));
+	return ((float) getRawBits() / (float)(1 << Fixed::bits));
 }
  
 int Fixed::toInt(void) const
 {
 	return (this->getRawBits() >> Fixed::bits);
+
 }

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Jul 17 21:36:51 2022
+# Make data base, printed on Sun Jul 24 18:00:17 2022
 
 # Variables
 
@@ -39,7 +39,7 @@ QT_ACCESSIBILITY = 1
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/101/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -55,11 +55,11 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/ezequeil/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+VSCODE_CODE_CACHE_PATH = /home/ezequeil/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.NGSCP1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.0BBMP1
 # default
 .LOADED := 
 # default
@@ -71,7 +71,7 @@ PKG_CONFIG_PATH = /home/ezequeil/mono-1.1.9.1/lib/pkgconfig:/home/ezequeil/mono-
 # makefile
 CURDIR := /home/ezequeil/Documents/GitHub/CPP
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
@@ -97,7 +97,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 17267
+VSCODE_PID = 7743
 # environment
 XDG_SESSION_TYPE = wayland
 # automatic
@@ -105,7 +105,7 @@ XDG_SESSION_TYPE = wayland
 # environment
 BAMF_DESKTOP_FILE_HINT = /var/lib/snapd/desktop/applications/code_code.desktop
 # environment
-SESSION_MANAGER = local/ezequeil-Aspire-A515-54G:@/tmp/.ICE-unix/1942,unix/ezequeil-Aspire-A515-54G:/tmp/.ICE-unix/1942
+SESSION_MANAGER = local/ezequeil-Aspire-A515-54G:@/tmp/.ICE-unix/1969,unix/ezequeil-Aspire-A515-54G:/tmp/.ICE-unix/1969
 # automatic
 *F = $(notdir $*)
 # environment
@@ -153,11 +153,11 @@ SNAP_USER_COMMON = /home/ezequeil/snap/code/common
 # environment
 LC_TIME = pt_PT.UTF-8
 # environment
-SNAP = /snap/code/101
+SNAP = /snap/code/102
 # environment
-INVOCATION_ID = 8d2eab59664b417d8916944d239c1e7a
+INVOCATION_ID = 955eb4a658e645509f9d096283c09f75
 # environment
-SNAP_REVISION = 101
+SNAP_REVISION = 102
 # environment
 SNAP_REAL_HOME = /home/ezequeil
 # environment
@@ -191,7 +191,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1967
+SYSTEMD_EXEC_PID = 1996
 # environment
 DISPLAY = :0
 # environment
@@ -203,17 +203,17 @@ MAKE_VERSION := 4.3
 # environment
 DISABLE_WAYLAND = 1
 # environment
-SNAP_DATA = /var/snap/code/101
+SNAP_DATA = /var/snap/code/102
 # environment
 SNAP_CONTEXT = ivixzH3CgFj4adzQlGKPjzNvzi7EL80KtNKIS0-pwJ_96oX7VCoQ
 # environment
-MANAGERPID = 1756
+MANAGERPID = 1784
 # environment
 LC_MEASUREMENT = pt_PT.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 17223
+GIO_LAUNCHED_DESKTOP_FILE_PID = 7693
 # environment
-_ = /snap/code/101/usr/share/code/code
+_ = /snap/code/102/usr/share/code/code
 # environment
 LC_PAPER = pt_PT.UTF-8
 # environment
@@ -223,7 +223,7 @@ GDK_PIXBUF_MODULE_FILE = /home/ezequeil/snap/code/common/.cache/gdk-pixbuf-loade
 # environment
 LC_CTYPE = pt_PT.UTF-8
 # environment
-JOURNAL_STREAM = 8:33496
+JOURNAL_STREAM = 8:34521
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -235,11 +235,11 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-0fb073e2-1.69.1-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-0fb073e2-1.69.2-main.sock
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/101/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
 # default
@@ -247,7 +247,7 @@ IM_CONFIG_PHASE = 1
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = b06ae3b2
+SNAP_VERSION = 3b889b09
 # default
 SUFFIXES := 
 # environment
@@ -259,7 +259,7 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/ezequeil/snap/code/101
+SNAP_USER_DATA = /home/ezequeil/snap/code/102
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -277,16 +277,16 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 66306, inode 14814354): 8 files, no impossibilities.
+# . (device 66306, inode 14814354): 9 files, no impossibilities.
+ 
+make: *** No rule to make target 'all'.  Stop.
 
-# 8 files, no impossibilities in 1 directories.
+
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 
 # Files
 
@@ -332,12 +332,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 144 B / avg = 9 B
-# current buf: size = 8162 B / used = 144 B / count = 16 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 154 B / avg = 9 B
+# current buf: size = 8162 B / used = 154 B / count = 17 / avg = 9 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=0/19=0%
-# Finished Make data base on Sun Jul 17 21:36:51 2022
+# Load=17/8192=0%, Rehash=0, Collisions=0/20=0%
+# Finished Make data base on Sun Jul 24 18:00:17 2022
 
  
