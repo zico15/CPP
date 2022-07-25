@@ -6,37 +6,26 @@
 /*   By: ezequeil <ezequeil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:07:55 by ezequeil          #+#    #+#             */
-/*   Updated: 2022/07/22 21:37:22 by ezequeil         ###   ########.fr       */
+/*   Updated: 2022/07/22 21:09:01 by ezequeil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CLAPTRAP_HPP
-#define CLAPTRAP_HPP
+#ifndef BRAIN_HPP
+#define BRAIN_HPP
 
 #include <string>
 #include <iostream>
+#include "Animal.hpp"
 
-class ClapTrap {
+class Brain{
 
-	protected:
-		std::string name;
-		int health;
-		int healthMax;
-		int energy;
-		int attack_p;
+	private:
+		std::string ideas[100];
 
 	public:
-		ClapTrap();
-		ClapTrap(std::string name);
-		ClapTrap(const ClapTrap &claptrap);
-		virtual ~ClapTrap();
-		std::string getName();
-		void setAttackPoint(int attack_p);
-		virtual void attack(const std::string& target);
-		void takeDamage(unsigned int amount);
-		void beRepaired(unsigned int amount);
-		ClapTrap &operator=(const ClapTrap &claptrap);
-		virtual void setstats();
+		Brain();
+		~Brain();
+		Brain &operator=(const Brain &a);
 
 };
 

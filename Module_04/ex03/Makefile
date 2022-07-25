@@ -1,11 +1,8 @@
 SRCS =  main.cpp \
- 		ClapTrap.cpp \
-		ScavTrap.cpp \
-		FragTrap.cpp \
-		DiamondTrap.cpp
+ 		AMateria.cpp
 
 CC = c++
-NAME = ex03
+NAME = ex00
 
 CFLANG = -Wall -Wextra -Werror -std=c++98
 OBJS = $(SRCS:.cpp=.o)

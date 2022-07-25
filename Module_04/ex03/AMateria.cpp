@@ -10,29 +10,44 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "AMateria.hpp" 
 
-Dog::Dog()
+AMateria::AMateria()
 {
-	std::cout << "Dog Constructor!" << std::endl;
-	type = "Dog";
-	this->brain = new Brain();
+    // std::cout << "AMateria Default Constructor" << std::endl;
 }
 
-Dog::~Dog()
+AMateria::AMateria(std::string const &type)
 {
-	delete brain;
-	std::cout << "Dog type: ("<< type << ") destructor!" << std::endl;
+    this->type = type;
 }
 
-Dog &Dog::operator=(const Dog &a)
+AMateria &AMateria::operator=(const AMateria &amateria)
 {
-	this->type = a.type;
-	return (*this);
+    if (amateria.getType() != this->getType()) {
+        std::cout << "Converting from one type to the other this way doesn't make sense." << std::endl
+        << "Please create or clone a new Materia." << std::endl;
+    }
+    return *this;
 }
 
-void Dog::makeSound() const
+AMateria::AMateria(const AMateria &amateria)
 {
-	std::cout << "Dog makeSound!" << std::endl;
+    // std::cout << "AMateria Copy Constructor" << std::endl;
+    *this = amateria;
 }
 
+AMateria::~AMateria()
+{
+    // std::cout << "AMateria Default Destructor" << std::endl;
+}
+
+std::string const &AMateria::getType() const
+{
+    return (this->type);
+}
+
+void AMateria::use(ICharacter& target)
+{
+    std::cout << "No Materia specified to use against " << target.getName() << std::endl;
+}

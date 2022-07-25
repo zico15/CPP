@@ -10,29 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Dog.hpp"
+#include "Animal.hpp"
 
-Dog::Dog()
+Animal::Animal()
 {
-	std::cout << "Dog Constructor!" << std::endl;
-	type = "Dog";
-	this->brain = new Brain();
+	std::cout << "Animal Constructor!" << std::endl;
+	type = "Animal";
 }
 
-Dog::~Dog()
+Animal::~Animal()
 {
-	delete brain;
-	std::cout << "Dog type: ("<< type << ") destructor!" << std::endl;
+	std::cout << "Animal type: ("<< type << ") destructor!" << std::endl;
 }
 
-Dog &Dog::operator=(const Dog &a)
+Animal &Animal::operator=(const Animal &a)
 {
-	this->type = a.type;
-	return (*this);
+
+	type = a.getType();
+	return *this;
 }
 
-void Dog::makeSound() const
+std::string Animal::getType() const
 {
-	std::cout << "Dog makeSound!" << std::endl;
+	return (type);
 }
 
+void Animal::makeSound() const
+{
+	std::cout << "Animal makeSound!" << std::endl;
+}

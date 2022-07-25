@@ -10,25 +10,25 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL_HPP
-#define ANIMAL_HPP
+#ifndef AMATERIA_HPP
+#define AMATERIA_HPP
 
 #include <string>
 #include <iostream>
-#include "Brain.hpp"
+#include "ICharacter.hpp"
 
-class Animal {
-
-	protected:
-		std::string type;
-
-	public:
-		Animal();
-		virtual ~Animal();
-		Animal &operator=(const Animal &a);
-		virtual void makeSound() const;
-		std::string getType() const;
-
+class AMateria {
+protected:
+    std::string type;
+public:
+    AMateria();
+    AMateria(std::string const & type);
+    std::string const &getType() const; //Returns the materia type
+    AMateria &operator=(const AMateria &amateria);
+    AMateria(const AMateria &amateria);
+    virtual AMateria* clone() const = 0;
+    virtual void use(ICharacter& target);
+    virtual ~AMateria();
 };
 
 

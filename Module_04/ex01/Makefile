@@ -1,7 +1,8 @@
 SRCS =  main.cpp \
  		Animal.cpp \
 		Dog.cpp \
-		Cat.cpp
+		Cat.cpp \
+		Brain.cpp
 
 CC = c++
 NAME = ex00

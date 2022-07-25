@@ -1,10 +1,11 @@
 SRCS =  main.cpp \
- 		ClapTrap.cpp \
-		ScavTrap.cpp \
-		FragTrap.cpp
+ 		Animal.cpp \
+		Dog.cpp \
+		Cat.cpp \
+		Brain.cpp
 
 CC = c++
-NAME = ex02
+NAME = ex00
 
 CFLANG = -Wall -Wextra -Werror -std=c++98
 OBJS = $(SRCS:.cpp=.o)
