@@ -3,7 +3,7 @@ SRCS = ./main.cpp \
 	./newZombie.cpp \
 	./randomChump.cpp
 
-CC = clang++
+CC = c++
 NAME = zombie
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

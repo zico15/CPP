@@ -2,7 +2,7 @@ SRCS =  main.cpp \
  		ClapTrap.cpp \
 		ScavTrap.cpp
 
-CC = clang++
+CC = c++
 NAME = ex01
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

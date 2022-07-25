@@ -1,7 +1,7 @@
 SRCS =  main.cpp \
  		ClapTrap.cpp
 
-CC = clang++
+CC = c++
 NAME = ex00
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

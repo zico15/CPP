@@ -1,6 +1,6 @@
 SRCS =  main.cpp
 
-CC = clang++
+CC = c++
 NAME = ex04
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

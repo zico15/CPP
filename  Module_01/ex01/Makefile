@@ -2,7 +2,7 @@ SRCS = ./main.cpp \
 	./Zombie.cpp \
 	./zombieHorde.cpp 
 
-CC = clang++
+CC = c++
 NAME = zombie
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

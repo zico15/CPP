@@ -1,7 +1,7 @@
 SRCS = Account.cpp \
 	   tests.cpp 
 
-CC = clang++
+CC = c++
 NAME = ex02
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

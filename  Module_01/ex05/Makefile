@@ -1,7 +1,7 @@
 SRCS =  main.cpp \
  		Harl.cpp 
 
-CC = clang++
+CC = c++
 NAME = ex05
 
 CFLANG = -Wall -Wextra -Werror -std=c++98

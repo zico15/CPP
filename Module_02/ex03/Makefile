@@ -3,7 +3,7 @@ SRCS =  main.cpp \
 		Point.cpp \
 		bsp.cpp
 
-CC = clang++
+CC = c++
 NAME = ex03
 
 CFLANG = -Wall -Wextra -Werror -std=c++98
