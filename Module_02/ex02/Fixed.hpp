@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: edos-san <edos-san@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/08/09 23:40:58 by edos-san          #+#    #+#             */
+/*   Updated: 2022/08/09 23:40:59 by edos-san         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef FIXED_HPP
 #define FIXED_HPP
 
@@ -20,12 +32,26 @@ class Fixed
 		int getRawBits(void) const;
 		void setRawBits(int const raw);
 		Fixed &operator=(Fixed const &Fixed);
-		Fixed operator*(Fixed const &Fixed);
-		Fixed &operator++(int);
-		Fixed &operator++();
+		bool operator>(const Fixed &fixed);
+		bool operator<(const Fixed &fixed);
+		bool operator>=(const Fixed &fixed);
+		bool operator<=(const Fixed &fixed);
+		bool operator==(const Fixed &fixed);
+		bool operator!=(const Fixed &fixed);
+		Fixed operator+(const Fixed &fixed);
+		Fixed operator-(const Fixed &fixed);
+		Fixed operator*(const Fixed &fixed);
+		Fixed operator/(const Fixed &fixed);
+		Fixed operator++();
+		Fixed operator++(int);
+		Fixed operator--();
+		Fixed operator--(int);
+		static Fixed& min(Fixed& a, Fixed&b);
+		static const Fixed& min(const Fixed& a, const Fixed&b);
+		static Fixed& max(Fixed& a, Fixed&b);
+		static const Fixed& max(const Fixed& a, const Fixed&b);
 		int toInt(void) const;
 		float toFloat(void) const;
-		static Fixed const &max(Fixed const &a, Fixed const &b);
 
 };
 

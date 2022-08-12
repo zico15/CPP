@@ -3,25 +3,28 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ezequeil <ezequeil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edos-san <edos-san@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:07:52 by ezequeil          #+#    #+#             */
-/*   Updated: 2022/07/24 14:24:51 by ezequeil         ###   ########.fr       */
+/*   Updated: 2022/08/10 19:09:26 by edos-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
 
-int main()
+int main(void)
 {
-	ClapTrap grandfather("Old Guy");
-	ScavTrap father("Moustache guy");
-	FragTrap mother("Beautiful woman");
-	DiamondTrap baby("Baby");
-	DiamondTrap jeff;
-
+	std::cout << "==============================================\n";
 	std::cout << std::endl;
-	grandfather.attack("jeff");
+	ClapTrap *test1 = new DiamondTrap("test1");
+		delete test1;
+	std::cout << std::endl;
+	std::cout << "==============================================\n";
+	ClapTrap clap("A1");
+	ScavTrap momma("A2");
+	DiamondTrap baby("A3");
+	DiamondTrap jeff;
+	std::cout << std::endl;
 	jeff.takeDamage(0);
 	jeff.attack("Old Guy");
 	baby.highFivesGuys();
@@ -38,13 +41,5 @@ int main()
 	baby = jeff;
 	baby.whoAmI();
 	baby.beRepaired(100);
-
-	std::cout << std::endl;
-
-	ClapTrap *test1 = new DiamondTrap("test1");
-	delete test1;
-
-	std::cout << std::endl;
-
-	return (0);
+	std::cout << "==============================================\n";
 }

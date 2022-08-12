@@ -5,9 +5,9 @@
 #include <iostream>
 #include "ClapTrap.hpp"
 
-class FragTrap: virtual public ClapTrap {
+class FragTrap: public  virtual  ClapTrap {
 
-	protected:
+	private:
 
 
 	public:
@@ -18,7 +18,7 @@ class FragTrap: virtual public ClapTrap {
 		virtual ~FragTrap();
 		virtual void attack(const std::string& target);
 		void highFivesGuys(void);
-		virtual void setstats();
+
 };
 
 

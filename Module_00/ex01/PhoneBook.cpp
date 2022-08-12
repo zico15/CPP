@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ezequeil <ezequeil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edos-san <edos-san@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 20:49:43 by ezequeil          #+#    #+#             */
-/*   Updated: 2022/07/12 20:55:25 by ezequeil         ###   ########.fr       */
+/*   Updated: 2022/08/08 21:02:13 by edos-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ PhoneBook::PhoneBook()
 {
 	this->index = 0;
 	this->size = 0;
+	this->index_list = 0;
 	this->list[0].msg = "first_name: ";
 	this->list[1].msg = "last_name: ";
 	this->list[2].msg = "nickname: ";
@@ -98,6 +99,8 @@ void print_contato(int i, Contact *contacts)
 void PhoneBook::SEARCH(void)
 {
 	int j;
+	char tmp[99999];
+
 	print_menu();
 	for (int i = 0; i < this->size; i++)
 		print_contato(i, this->contacts);
@@ -108,7 +111,9 @@ void PhoneBook::SEARCH(void)
 		print_contato_all(j, this->contacts, this->list);
 	else
 		std::cout << "index error\n";
-	scanf ("%d",&j);
+	fgetc(stdin);
+	while(fgetc(stdin) < 10) 
+		;
 }
 
 void PhoneBook::EXIT(void)

@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ClapTrap.hpp                                       :+:      :+:    :+:   */
+/*   AMateria.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ezequeil <ezequeil@student.42.fr>          +#+  +:+       +#+        */
+/*   By: edos-san <edos-san@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 18:07:55 by ezequeil          #+#    #+#             */
-/*   Updated: 2022/07/22 21:09:01 by ezequeil         ###   ########.fr       */
+/*   Updated: 2022/08/11 14:20:45 by edos-san         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include <string>
 #include <iostream>
 #include "ICharacter.hpp"
+
+class ICharacter;
 
 class AMateria {
 protected:
@@ -30,6 +32,5 @@ public:
     virtual void use(ICharacter& target);
     virtual ~AMateria();
 };
-
 
 #endif

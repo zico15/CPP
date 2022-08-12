@@ -3,12 +3,9 @@
 
 DiamondTrap::DiamondTrap()
 {
-     this->health = FragTrap::health;
-    this->healthMax = FragTrap::healthMax;
-    this->energy = ScavTrap::energy;
-    this->attack_p = FragTrap::attack_p;
     this->name = "NULL";
     ClapTrap::name =  (this->name + "_clap_name");
+    std::cout << "DiamondTrap: Default constructor\n";
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap &s)
@@ -29,6 +26,11 @@ DiamondTrap::DiamondTrap(const std::string &name)
     this->attack_p = FragTrap::attack_p;
     this->name = name;
     ClapTrap::name =  (this->name + "_clap_name");
+}
+
+DiamondTrap::~DiamondTrap()
+{
+    std::cout << "DiamondTrap: destroy\n";
 }
 
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &s)

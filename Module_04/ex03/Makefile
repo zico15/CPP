@@ -1,5 +1,9 @@
 SRCS =  main.cpp \
- 		AMateria.cpp
+ 		AMateria.cpp \
+		Character.cpp \
+		Cure.cpp \
+		Ice.cpp \
+		MateriaSource.cpp
 
 CC = c++
 NAME = ex00

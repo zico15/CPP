@@ -36,7 +36,6 @@ class ClapTrap {
 		void takeDamage(unsigned int amount);
 		void beRepaired(unsigned int amount);
 		ClapTrap &operator=(const ClapTrap &claptrap);
-		virtual void setstats();
 
 };
 
