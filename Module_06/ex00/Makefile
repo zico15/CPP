@@ -1,4 +1,5 @@
-SRCS =  megaphone.cpp 
+SRCS =  main.cpp \
+ 		Convert.cpp
 
 CC = c++
 NAME = ex00
@@ -23,6 +24,6 @@ re: fclean all
 m: fclean
 
 r: 
-	make re && clear && ./$(NAME)  Damnit " ! " "Sorry students, I thought this thing was off."
+	make re && clear && ./$(NAME)
 
 .PHONY: all clean fclean re

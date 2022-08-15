@@ -1,7 +1,8 @@
-SRCS =  megaphone.cpp 
+SRCS =  main.cpp \
+ 		Data.cpp
 
 CC = c++
-NAME = ex00
+NAME = ex01
 
 CFLANG = -Wall -Wextra -Werror -std=c++98
 OBJS = $(SRCS:.cpp=.o)
@@ -10,7 +11,7 @@ OBJS = $(SRCS:.cpp=.o)
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(CFLANG) -o $(NAME) $(OBJS)
+	$(CC) $(CFLAG) -o $(NAME) $(OBJS)
 
 clean:
 	rm -f $(OBJS)
@@ -23,6 +24,6 @@ re: fclean all
 m: fclean
 
 r: 
-	make re && clear && ./$(NAME)  Damnit " ! " "Sorry students, I thought this thing was off."
+	make re && clear && ./$(NAME)
 
 .PHONY: all clean fclean re

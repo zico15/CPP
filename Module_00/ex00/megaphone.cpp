@@ -18,7 +18,7 @@ int main(int argv, char **argc)
 	std::string arg;
 	if (argv == 1)
 		return (0);
-	for (int i = 1; i < argv; i++)
+	for (size_t i = 1; i < argv; i++)
 	{
 		arg = std::string(argc[i]);
 		for (int j = 0; j < arg.length(); j++)
