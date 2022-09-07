@@ -27,13 +27,17 @@ typedef struct s_contact
 class Contact
 {
 		private:
-			
+			string first_name, last_name, nickname, phone_number;
+			string darkest_secret;
 		public:
 			Contact(void);
 			Contact(t_contact *contact);
 			~Contact();
-			string first_name, last_name, nickname, phone_number;
-			string darkest_secret;
+			string getFirstName();
+			string getLastName();	
+			string getNickName();	
+			string getPhone();
+			string getSecret();	
 };
 
 

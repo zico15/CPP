@@ -21,7 +21,7 @@ class PhoneBook
 	private:
 		Contact contacts[8];
 		t_contact list[5];
-		int		index;
+		int		index, index_list;
 		int		size;
 	public:
 		PhoneBook();

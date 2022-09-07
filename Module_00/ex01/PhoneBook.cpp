@@ -79,20 +79,20 @@ void print_menu()
 
 void print_contato_all(int i, Contact *contacts, t_contact *list)
 {
-	std::cout << list[0].msg << contacts[i].first_name << std::endl;
-	std::cout << list[1].msg << contacts[i].last_name << std::endl;
-	std::cout << list[2].msg << contacts[i].nickname << std::endl;
-	std::cout << list[3].msg << contacts[i].phone_number << std::endl;
-	std::cout << list[4].msg << contacts[i].darkest_secret << std::endl;
+	std::cout << list[0].msg << contacts[i].getFirstName() << std::endl;
+	std::cout << list[1].msg << contacts[i].getLastName() << std::endl;
+	std::cout << list[2].msg << contacts[i].getNickName() << std::endl;
+	std::cout << list[3].msg << contacts[i].getPhone() << std::endl;
+	std::cout << list[4].msg << contacts[i].getSecret() << std::endl;
 	std::cout<< "\n";
 }
 
 void print_contato(int i, Contact *contacts)
 {
 	printf_colum(std::to_string(i));
-	printf_colum(contacts[i].first_name);
-	printf_colum(contacts[i].last_name);
-	printf_colum(contacts[i].nickname);
+	printf_colum(contacts[i].getFirstName());
+	printf_colum(contacts[i].getLastName());
+	printf_colum(contacts[i].getNickName());
 	std::cout<< "|\n";
 }
 

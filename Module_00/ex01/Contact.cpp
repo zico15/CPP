@@ -30,3 +30,28 @@ Contact::~Contact()
 {
 	
 }
+
+string Contact::getFirstName()
+{
+	return (first_name);
+}
+
+string Contact::getLastName()
+{
+	return (last_name);
+}
+
+string Contact::getNickName()
+{
+	return (nickname);
+}
+
+string Contact::getPhone()
+{
+	return (phone_number);
+}
+
+string Contact::getSecret()
+{
+	return (darkest_secret);
+}
