@@ -8,11 +8,13 @@
 #include <list>
 #include <ctime>
 #include <sys/time.h>
+
 class PmergeMe
 {
     private:
         std::list<int> lis_first;
         std::deque<int> deque_first;
+
 
 
     public:
@@ -25,4 +27,5 @@ class PmergeMe
     private:
             bool validate_number(std::string value);
             long double get_time();
+            bool contains_item(int number);
 };

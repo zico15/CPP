@@ -33,6 +33,15 @@ bool PmergeMe::validate_number(std::string value) {
     return (std::isdigit((int) value[i]));
 }
 
+bool PmergeMe::contains_item(int number)
+{
+    std::list<int>::iterator ptr;
+    for(ptr = lis_first.begin(); ptr != lis_first.end(); ++ptr)
+        if (*ptr == number)
+            return true;
+    return false;
+}
+
 void PmergeMe::load(char **args)
 {
     std::string n;
@@ -43,8 +52,9 @@ void PmergeMe::load(char **args)
         if (!validate_number(n))
             error();
         long long number = std::strtol(n.c_str(), 0, 10);
-        if (number < -2147483648 || number > 2147483647)
+        if (number < 0 || number > 2147483647 || contains_item(number))
             error();
+
         this->lis_first.push_back(number);
         this->deque_first.push_back(number);
         args++;

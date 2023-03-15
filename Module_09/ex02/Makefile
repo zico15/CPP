@@ -22,6 +22,6 @@ re: fclean all
 m: fclean
 
 r: 
-	make re && clear && ./$(NAME)  3 5 9 7 4
+	make re && clear && ./$(NAME) 3 5 9 7 4 -9
 
 .PHONY: all clean fclean re
