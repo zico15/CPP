@@ -7,6 +7,7 @@
 #include <iterator>
 #include <list>
 #include <ctime>
+#include <sys/time.h>
 class PmergeMe
 {
     private:
@@ -23,5 +24,5 @@ class PmergeMe
 
     private:
             bool validate_number(std::string value);
-            long long get_time();
+            long double get_time();
 };

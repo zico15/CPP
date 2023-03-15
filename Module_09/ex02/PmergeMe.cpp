@@ -49,37 +49,20 @@ void PmergeMe::load(char **args)
         this->deque_first.push_back(number);
         args++;
     }
-
 }
 
-#include <iostream>
-#include <ctime>
 
-int main() {
-    struct timeval tv;
+long double PmergeMe::get_time(){
+    timeval tv;
+
     gettimeofday(&tv, NULL);
-    long long millisecondsSinceEpoch =
-        (long long)(tv.tv_sec) * 1000 +
-        (long long)(tv.tv_usec) / 1000;
-    long long microsecondsSinceEpoch =
-        (long long)(tv.tv_sec) * 1000000 +
-        (long long)(tv.tv_usec);
-    std::cout << "Time in microseconds since epoch: " << microsecondsSinceEpoch << std::endl;
-    return 0;
-}
-
-long long PmergeMe::get_time(){
-    const long long sysTime = timegm(0);
-    const long long sysTimeMS = sysTime*1000;
-    std::cout << "time: " << sysTime << "\n";
-    unsigned long sysTime = std::ctime.tv_usec*(uint64_t)1000000+curTime.tv_usec;
-    return sysTime;
+    return (long long)(tv.tv_sec) * 1000000 + (long long)(tv.tv_usec);
 }
 
 void PmergeMe::print_list(){
 
-    long long list_time;
-    long long deque_time;
+    long double list_time;
+    long double deque_time;
 
     std::list<int>::iterator ptr;
     std::cout << "Before:";
@@ -88,7 +71,7 @@ void PmergeMe::print_list(){
     std::cout << "\n";
     list_time =  get_time();
     this->lis_first.sort();
-    list_time = get_time() - list_time;
+    list_time = (get_time() - list_time);
     std::cout << "After: ";
     for(ptr = lis_first.begin(); ptr != lis_first.end(); ++ptr)
         std::cout << " " <<  *ptr << "";
@@ -96,7 +79,7 @@ void PmergeMe::print_list(){
     deque_time =  get_time();
     std::sort(this->deque_first.begin(), this->deque_first.end());
     deque_time = get_time() - deque_time;
-    std::cout << "Time to process a range of 5 elements with std::list : " <<  list_time << " us\n";
-    std::cout << "Time to process a range of 5 elements with std::deque: " <<  deque_time << " us\n";
+    std::cout << "Time to process a range of 5 elements with std::list : " <<  list_time << " milliseconds\n";
+    std::cout << "Time to process a range of 5 elements with std::deque: " <<  deque_time << " milliseconds\n";
 
 }
