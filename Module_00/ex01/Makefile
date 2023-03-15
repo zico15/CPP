@@ -1,30 +1,22 @@
-SRCS =  PhoneBook.cpp \
-		Contact.cpp \
-		main.cpp
+NAME = accounts
 
 CC = c++
-NAME = ex01
 
-CFLANG = -Wall -Wextra -Werror -std=c++98
-OBJS = $(SRCS:.cpp=.o)
- 
+FLAGS = -Wall -Wextra -Werror -std=c++98
+
+SRC = $(wildcard *.cpp)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLANG) -o $(NAME) $(OBJS)
+$(NAME): $(SRC)
+	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
-clean:
-	rm -f $(OBJS)
+fclean:
+	rm -rf $(NAME)
 
-fclean: clean
-	rm -f $(NAME)
+m:
+	rm -rf $(NAME)
+r:
+	make re && clear &&./$(NAME)
 
 re: fclean all
-
-m: fclean
-
-r: 
-	make re && clear && ./$(NAME)
-
-.PHONY: all clean fclean re

@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Aug 10 18:11:44 2022
+# Make data base, printed on Tue Aug 16 16:10:05 2022
 
 # Variables
 
@@ -17,9 +17,11 @@ GDK_BACKEND = x11
 # environment
 LC_ALL = C
 # environment
+NO_AT_BRIDGE = 1
+# environment
 GJS_DEBUG_OUTPUT = stderr
 # environment
-GNOME_KEYRING_CONTROL = /nfs/homes/edos-san/.cache/keyring-3LELQ1
+GNOME_KEYRING_CONTROL = /nfs/homes/edos-san/.cache/keyring-92I2Q1
 # environment
 SBX_CHROME_API_RQ = 1
 # environment
@@ -55,7 +57,7 @@ XDG_DATA_DIRS = /app/share:/usr/share:/usr/share/runtime/share:/run/host/user-sh
 # environment
 VSCODE_CODE_CACHE_PATH = /nfs/homes/edos-san/.var/app/com.visualstudio.code/config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
 # environment
-XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session34
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session4
 # environment
 LANG = C
 # environment
@@ -101,7 +103,7 @@ FLATPAK_SANDBOX_DIR = /nfs/homes/edos-san/.var/app/com.visualstudio.code/sandbox
 # environment
 VSCODE_PID = 23
 # environment
-KRB5CCNAME = FILE:/tmp/krb5cc_10323_j76pVb
+KRB5CCNAME = FILE:/tmp/krb5cc_10323_sPK0Ix
 # environment
 XDG_SESSION_TYPE = x11
 # automatic
@@ -113,7 +115,7 @@ XDG_DATA_HOME = /nfs/homes/edos-san/.var/app/com.visualstudio.code/data
 # environment
 SANDBOX_LD_PRELOAD = /app/bin/../lib/libzypak-preload-host.so:/app/bin/../lib/libzypak-preload-host-spawn-strategy.so
 # environment
-SESSION_MANAGER = local/c2r6s1.42lisboa.com:@/tmp/.ICE-unix/728562,unix/c2r6s1.42lisboa.com:/tmp/.ICE-unix/728562
+SESSION_MANAGER = local/c2r6s2.42lisboa.com:@/tmp/.ICE-unix/162205,unix/c2r6s2.42lisboa.com:/tmp/.ICE-unix/162205
 # automatic
 *F = $(notdir $*)
 # environment
@@ -197,9 +199,9 @@ DISPLAY = :99.0
 # default
 MAKE_VERSION := 4.3
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 748373
+GIO_LAUNCHED_DESKTOP_FILE_PID = 234245
 # environment
-SSH_AGENT_PID = 728659
+SSH_AGENT_PID = 162300
 # environment
 _ = /usr/bin/make
 # environment
@@ -241,7 +243,7 @@ ZYPAK_BIN = /app/bin
 # environment
 GDMSESSION = ubuntu
 # variable set hash-table stats:
-# Load=114/1024=11%, Rehash=0, Collisions=14/139=10%
+# Load=115/1024=11%, Rehash=0, Collisions=14/140=10%
 
 # Pattern-specific Variable Values
 
@@ -249,9 +251,9 @@ GDMSESSION = ubuntu
 
 # Directories
 
-# . (device 58, inode 18252221): 12 files, no impossibilities.
+# . (device 58, inode 18252221): 14 files, no impossibilities.
 
-# 12 files, no impossibilities in 1 directories.
+# 14 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -279,6 +281,7 @@ all:
 #  File does not exist.
 #  File has not been updated.
 
+ 
 # Not a target:
 makefile:
 #  Implicit rule search has been done.
@@ -294,7 +297,6 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
- 
 # Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
 # VPATH Search Paths
 
@@ -302,12 +304,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 19 / storage = 172 B / avg = 9 B
-# current buf: size = 8162 B / used = 172 B / count = 19 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 21 / storage = 185 B / avg = 8 B
+# current buf: size = 8162 B / used = 185 B / count = 21 / avg = 8 B
 
-# strcache performance: lookups = 22 / hit rate = 13%
+# strcache performance: lookups = 24 / hit rate = 12%
 # hash-table stats:
-# Load=19/8192=0%, Rehash=0, Collisions=0/22=0%
-# Finished Make data base on Wed Aug 10 18:11:44 2022
+# Load=21/8192=0%, Rehash=0, Collisions=0/24=0%
+# Finished Make data base on Tue Aug 16 16:10:05 2022
 
  

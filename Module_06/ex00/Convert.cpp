@@ -75,7 +75,7 @@ std::string Convert::toFloat()
 {
     try
 	{
-    	float f = std::stof(value);
+    	float f = std::atof(value);
         std::stringstream stream;
         stream << std::fixed << std::setprecision(1) << f << "f";
         return (stream.str());
@@ -95,10 +95,10 @@ std::string Convert::toDouble()
 {
     try
 	{
-    	double d = std::stod(value);
-        std::stringstream stream;
-        stream << std::fixed << std::setprecision(1) << d;
-        return (stream.str());
+    	double d = std::atof(value);
+        std::stringstream s;
+        s << std::fixed << std::setprecision(1) << d;
+        return (s.str());
 	}
 	catch(const std::exception& e)
 	{

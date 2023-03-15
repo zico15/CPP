@@ -1,29 +1,19 @@
-SRCS =  main.cpp \
- 		Convert.cpp
+NAME = accounts
 
 CC = c++
-NAME = ex00
 
-CFLANG = -Wall -Wextra -Werror -std=c++98
-OBJS = $(SRCS:.cpp=.o)
- 
+FLAGS = -Wall -Wextra -Werror -std=c++98
+
+SRC = $(wildcard *.cpp)
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	$(CC) $(CFLANG) -o $(NAME) $(OBJS)
+$(NAME): $(SRC)
+	$(CC) $(FLAGS) $(SRC) -o $(NAME)
 
-clean:
-	rm -f $(OBJS)
+fclean:
+	rm -rf $(NAME)
 
-fclean: clean
-	rm -f $(NAME)
-
+r:
+	make re && ./$(NAME)
 re: fclean all
-
-m: fclean
-
-r: 
-	make re && clear && ./$(NAME)
-
-.PHONY: all clean fclean re
