@@ -6,9 +6,6 @@
 
 PmergeMe::PmergeMe(){
 
-   // this->lis_first.sort();
-
-   // std::sort(this->deque_first.begin(), this->deque_first.end());
 }
 
 PmergeMe::~PmergeMe(){
@@ -56,10 +53,11 @@ void PmergeMe::load(char **args)
 }
 
 long long PmergeMe::get_time(){
-    const long long sysTime = time(0);
+    const long long sysTime = timegm(0);
     const long long sysTimeMS = sysTime*1000;
-
-    return sysTimeMS;
+    std::cout << "time: " << sysTime << "\n";
+    unsigned long sysTime = std::ctime.tv_usec*(uint64_t)1000000+curTime.tv_usec;
+    return sysTime;
 }
 
 void PmergeMe::print_list(){
@@ -69,14 +67,20 @@ void PmergeMe::print_list(){
 
     std::list<int>::iterator ptr;
     std::cout << "Before:";
-    for(ptr = list.begin(); ptr != list.end(); ++ptr)
+    for(ptr = lis_first.begin(); ptr != lis_first.end(); ++ptr)
         std::cout << " " <<  *ptr << "";
     std::cout << "\n";
     list_time =  get_time();
     this->lis_first.sort();
     list_time = get_time() - list_time;
-    std::cout << "Before:";
-    for(ptr = list.begin(); ptr != list.end(); ++ptr)
+    std::cout << "After: ";
+    for(ptr = lis_first.begin(); ptr != lis_first.end(); ++ptr)
         std::cout << " " <<  *ptr << "";
     std::cout << "\n";
+    deque_time =  get_time();
+    std::sort(this->deque_first.begin(), this->deque_first.end());
+    deque_time = get_time() - deque_time;
+    std::cout << "Time to process a range of 5 elements with std::list : " <<  list_time << " us\n";
+    std::cout << "Time to process a range of 5 elements with std::deque: " <<  deque_time << " us\n";
+
 }
