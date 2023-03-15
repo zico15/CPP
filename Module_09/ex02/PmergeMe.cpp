@@ -52,6 +52,22 @@ void PmergeMe::load(char **args)
 
 }
 
+#include <iostream>
+#include <ctime>
+
+int main() {
+    struct timeval tv;
+    gettimeofday(&tv, NULL);
+    long long millisecondsSinceEpoch =
+        (long long)(tv.tv_sec) * 1000 +
+        (long long)(tv.tv_usec) / 1000;
+    long long microsecondsSinceEpoch =
+        (long long)(tv.tv_sec) * 1000000 +
+        (long long)(tv.tv_usec);
+    std::cout << "Time in microseconds since epoch: " << microsecondsSinceEpoch << std::endl;
+    return 0;
+}
+
 long long PmergeMe::get_time(){
     const long long sysTime = timegm(0);
     const long long sysTimeMS = sysTime*1000;
